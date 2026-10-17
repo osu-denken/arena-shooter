@@ -1,0 +1,19 @@
+# アリーナ・シューター
+
+大阪産業大学 電子計算研究部の部員が制作した、ブラウザで遊べる三人称/一人称アクションゲームです。
+銃と剣を切り替えながら、アリーナに現れる敵をすべて倒します(全5ステージ)。
+
+- **遊ぶ**: https://osu-denken.net/arena-shooter/ (PCのブラウザ推奨。スマホ・タブレット非対応)
+- **操作**: WASD 移動 / Shift ダッシュ / E ジェットパック / V 視点切替 / 1 銃・2 剣 / 左クリック 攻撃 / 右クリック ズーム(スナイパー) / R リロード
+
+このリポジトリには、Unity(2022.3, WebGL)でビルドした**公開用ファイルだけ**が入っています。
+ゲームのソースやアセットは含まれていません。
+
+## クレジット
+
+- © Unity Technologies Japan/UCL ユニティちゃん([ユニティちゃんライセンス](https://unity-chan.com/contents/license_jp/))
+- フォント: Noto Sans JP (SIL Open Font License 1.1)
+- 3Dモデル: Sci-Fi Warrior PBR HP Polyart, Low Poly Pistol Weapon Pack 2, Low Poly SMG Weapon Pack 3, Sword Two-Hander, Blink, PolyOne (Unity Asset Store)
+- アニメーション: Mixamo
+
+各素材の権利は、それぞれの権利者に帰属します。
