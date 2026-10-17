@@ -30,6 +30,13 @@
   .credits { font-size: 12px; color: #80868b; line-height: 1.7; }
   .credits a { color: #8ab4f8; }
   #mobile { display: none; padding: 24px 16px; text-align: center; }
+  /* 埋め込みモード(?embed): 他のページの iframe に入れるとき、ゲーム画面だけを枠いっぱいに出す */
+  #fsembed { display: none; position: absolute; right: 8px; bottom: 8px; z-index: 5; opacity: .75; }
+  body.embed { overflow: hidden; }
+  body.embed .wrap { max-width: none; padding: 0; }
+  body.embed h1, body.embed .toolbar, body.embed #game .panel { display: none; }
+  body.embed #stage { border-radius: 0; aspect-ratio: auto; width: 100vw; height: 100vh; }
+  body.embed #fsembed { display: block; }
 </style>
 </head>
 <body>
@@ -46,6 +53,7 @@
       <canvas id="unity-canvas" tabindex="-1"></canvas>
       <div id="loading"><div class="bar"><div id="progress"></div></div><p id="loadtext">読み込み中… (初回は少し時間がかかります)</p></div>
       <div id="error"></div>
+      <button id="fsembed" type="button">全画面</button>
     </div>
     <div class="toolbar">
       <span>画面をクリックすると操作できます。<b>Esc</b> でマウスが解除されます。</span>
@@ -73,6 +81,7 @@
 </div>
 
 <script>
+  if (location.search.indexOf('embed') >= 0) document.body.classList.add('embed');
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   if (isMobile) {
     document.getElementById("game").style.display = "none";
@@ -100,6 +109,7 @@
       }).then(function (instance) {
         loading.style.display = "none";
         document.getElementById("fs").onclick = function () { instance.SetFullscreen(1); };
+        document.getElementById("fsembed").onclick = function () { instance.SetFullscreen(1); };
       }).catch(function (message) {
         loading.style.display = "none";
         errorBox.style.display = "flex";
