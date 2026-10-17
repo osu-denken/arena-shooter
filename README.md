@@ -13,7 +13,7 @@
 
 - © Unity Technologies Japan/UCL ユニティちゃん — この作品は[ユニティちゃんライセンス条項](https://unity3d.jp/unity-chan/license?lang=ja)の元に提供されています
 - フォント: Noto Sans JP (SIL Open Font License 1.1)
-- 3Dモデル: Robot Hero PBR HP Polyart (Dungeon Mason), Free Gun (PolyOne), Free Swords (Blink), Low Poly Pistol Weapon Pack 2, Low Poly SMG Weapon Pack 3, Sword Two-Hander (いずれも Unity Asset Store)
+- 3Dモデル(いずれも Unity Asset Store): Robot Hero : PBR HP Polyart (Dungeon Mason) / FREE - Low Poly Swords - RPG Weapons (Blink) / Sword Two-Hander (Lord Enot) / Free Pack - Gun (PolyOne Studio) / Low Poly Pistol Weapon Pack 2・Low Poly SMG Weapon Pack 3 (CASTLE BRAVO)
 - アニメーション: Mixamo
 
 各素材の権利は、それぞれの権利者に帰属します。
